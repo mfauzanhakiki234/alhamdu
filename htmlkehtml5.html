@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasantri Baru Asrama Ibnu Sina</title>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Pendaftaran Mahasantri Baru Asrama Ibnu Sina - INDUK PPDU</h1>
+        <h2>FORMULIR PENDAFTARAN</h2>
+    </header>
+
+   
+    <section>
+        <article>
+            <form method="post" action="#">
+                <table cellpadding="5">
+                    <tr>
+                        <td>Nama Lengkap:</td>
+                        <td><input type="text" name="nama" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Website/Blog:</td>
+                        <td><input type="url" name="website" placeholder="https://contohblog.com"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin:</td>
+                        <td>
+                            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                            <input type="radio" name="gender" value="Perempuan"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobi (Pilih 3):</td>
+                        <td>
+                            <input type="checkbox" name="hobi" value="Tidur"> Tidur<br>
+                            <input type="checkbox" name="hobi" value="Makan"> Makan<br>
+                            <input type="checkbox" name="hobi" value="Membersihkan"> Membersihkan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Asal Kota:</td>
+                        <td>
+                            <select name="asal_kota" required>
+                                <option value="">-- Pilih Kota --</option>
+                                <option value="Jombang">Jombang</option>
+                                <option value="Yogya">Yogya</option>
+                                <option value="Lombok">Lombok</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Janji Temu:</td>
+                        <td><input type="date" name="tanggal" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jarak Rumah ke Darul ulum Jombang (km):</td>
+                        <td>
+                            <input type="range" name="jarak" min="0" max="1000" step="5">
+                            <small>0 - 1000 km</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Warna Kesukaan:</td>
+                        <td><input type="color" name="warna"></td>
+                    </tr>
+                    <tr>
+                        <td>Komentar:</td>
+                        <td><textarea name="komentar" rows="4" cols="30"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="KIRIM DATA (POST)"></td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+
+        <article>
+            <h3>Jadwal Pendaftaran Offline</h3>
+            <table cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam Kunjungan</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>08:00 - 15:00</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>08:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>09:00 - 16:00</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <h3>Langkah Pendaftaran</h3>
+            <ol>
+                <li>Isi formulir dengan lengkap.</li>
+                <li>Klik tombol "KIRIM DATA (POST)".</li>
+                <li>Tunggu konfirmasi email.</li>
+            </ol>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Kontak: (087654389543) | Kunjungi 
+            <a href="https://psb.ponpesdarululum.id/" target="_blank">
+                Homepage Asrama Ibnu Sina Online
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
