@@ -1,3 +1,129 @@
-<html>
-    belajar
-<html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Relasi dan Fungsi - Matematika Diskrit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 25px;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            background: #2ecc71;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #27ae60;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Proyek Matematika Diskrit</h1>
+<p><b>Topik:</b> Relasi dan Fungsi</p>
+
+<div class="box">
+    <h2>Relasi Mahasiswa dan Mata Kuliah</h2>
+
+    <table>
+        <tr>
+            <th>Mahasiswa</th>
+            <th>Mata Kuliah</th>
+        </tr>
+        <tr>
+            <td>Fauzan</td>
+            <td>Matematika Diskrit</td>
+        </tr>
+        <tr>
+            <td>Hobir</td>
+            <td>Basis Data</td>
+        </tr>
+        <tr>
+            <td>Budi</td>
+            <td>Algoritma</td>
+        </tr>
+        <tr>
+            <td>Zulki</td>
+            <td>Pemrograman Web</td>
+        </tr>
+    </table>
+
+    <p>
+        Relasi di atas menunjukkan hubungan <b>"mahasiswa mengambil mata kuliah"</b>.
+        Relasi ini termasuk <b>banyak ke banyak</b>.
+    </p>
+</div>
+
+<div class="box">
+    <h2>Fungsi Nilai ke Grade</h2>
+
+    <label>Masukkan Nilai (0–100):</label><br>
+    <input type="number" id="nilai" min="0" max="100">
+    <br>
+    <button onclick="hitungGrade()">Tentukan Grade</button>
+
+    <p id="hasil"></p>
+</div>
+
+<script>
+    function hitungGrade() {
+        let nilai = document.getElementById("nilai").value;
+        let grade = "";
+
+        if (nilai === "") {
+            alert("Masukkan nilai terlebih dahulu!");
+            return;
+        }
+
+        nilai = parseInt(nilai);
+
+        if (nilai >= 85) {
+            grade = "A";
+        } else if (nilai >= 70) {
+            grade = "B";
+        } else if (nilai >= 60) {
+            grade = "C";
+        } else if (nilai >= 50) {
+            grade = "D";
+        } else {
+            grade = "E";
+        }
+
+        document.getElementById("hasil").innerHTML =
+            "Nilai <b>" + nilai + "</b> → Grade <b>" + grade + "</b>";
+    }
+</script>
+
+</body>
+</html>
